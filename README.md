@@ -86,5 +86,6 @@ Status code distribution:
 ## Next
 
 1. use [@mpth/react-in-view](https://www.npmjs.com/package/@mpth/react-in-view) for making some components SSR faster and use what gets into our view
-2. change some components so state comes clientside
-3. create faster render engine examples like hyperloop
+2. change some components so state comes clientside [@mpth/react-no-ssr](https://www.npmjs.com/package/@mpth/react-no-ssr)
+3. see for small tweaks to less block our event loop
+4. create faster render engine examples like hyperloop
