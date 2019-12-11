@@ -1,5 +1,4 @@
 const express = require('express');
-const proxy = require('http-proxy-middleware');
 const cookieParser = require('cookie-parser');
 const path = require('path');
 const app = express();
