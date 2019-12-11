@@ -12,6 +12,8 @@ const ratelimitMiddleware = require('./middleware/rate-limit/index');
 const html = require('./constants/sample-html');
 const errorHtml = require('./constants/error-html');
 
+const warmUpCache = require('./modules/warmup-cache');
+
 const on = 'on';
 const rateLimit = process.env.RATELIMIT ? parseInt(process.env.RATELIMIT, 10) : 34;
 const toggleRateLimit = process.env.TOGGLE_RATELIMIT || 'off';
@@ -86,5 +88,6 @@ if (cluster.isMaster) {
             `Rate limitter is ${toggleRateLimit === on ? `on with ${rateLimit} tps` : 'off'}\n`,
             `Caching is ${toggleCaching === on ? 'on' : 'off'}\n`,
         );
+        warmUpCache();
     });
 }
