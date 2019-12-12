@@ -1,7 +1,7 @@
 # tps express cache
 > make it faster
 
-Throughput; the higher the better. This means that the server is capable of successfully executing that many number of requests per unit of time.
+Throughput; the higher the better. This means that the server is capable of successfully executing that many number of requests per unit of time. This playground belongs to my article https://medium.com/@mpth/nodejs-and-react-ssr-the-need-for-foul-play-30c0f795e72a
 
 ## Introduction
 Two middlewares are introduced to be able to have a better TPS with express. It is all based on our current max TPS. Then we take 5 off this amount to be able to still have CPU power to handle responses from memory.
