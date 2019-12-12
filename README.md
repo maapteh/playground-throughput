@@ -1,4 +1,4 @@
-# tps express cache
+# max healthy tps express with middlewares: ratelimit and cache
 > make it faster
 
 Throughput; the higher the better. This means that the server is capable of successfully executing that many number of requests per unit of time. This playground belongs to my article https://medium.com/@mpth/nodejs-and-react-ssr-the-need-for-foul-play-30c0f795e72a
